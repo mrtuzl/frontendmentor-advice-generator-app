@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
+  width: 425px;
+  height: 275px;
+  background-color: hsl(217, 19%, 24%);
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  border-radius: 15px;
+  font-family: "Manrope", sans-serif;
+}
+.container .box .advice-id {
+  font-size: 0.7rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  font-weight: 500;
+  padding: 5px;
+}
+.container .box .advice {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 425px;
+  height: 160px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.container .box .divider {
+  width: 350px;
+}
+.container .box .icon {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(150, 100%, 66%);
+  border: 0px solid hsl(150, 100%, 66%);
+  border-radius: 50px;
+}
+.container .box .icon img {
+  width: 20px;
+}
+.container .box .icon:hover {
+  box-shadow: 0px 0px 30px 0px hsl(150, 100%, 66%);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 430px) {
+  .container .box {
+    width: 370px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .container .box .advice {
+    width: 370px !important;
   }
-}
+  .container .box .divider {
+    width: 330px !important;
+  }
+}/*# sourceMappingURL=App.css.map */
